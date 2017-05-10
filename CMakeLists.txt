@@ -6,7 +6,6 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake")
 
-find_package(Boost COMPONENTS system filesystem REQUIRED)
 find_package(Flann REQUIRED)
 
 include_directories(${FLANN_INCLUDE_DIRS})
