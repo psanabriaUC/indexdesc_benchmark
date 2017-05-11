@@ -15,7 +15,7 @@ set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake")
 
 find_package(Flann REQUIRED)
 
-include_directories(${FLANN_INCLUDE_DIRS})
+include_directories(SYSTEM ${FLANN_INCLUDE_DIRS})
 
 set(SOURCE_FILES main.cpp)
 add_executable(indexdesc_benchmark ${SOURCE_FILES})
